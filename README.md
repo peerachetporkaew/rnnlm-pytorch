@@ -47,6 +47,8 @@ The `train.py` script accepts the following arguments:
 - `--save`: Prefix to save the final model. `type=str`, `default='./models/model'`.
 - `--dict`: Path to save the dictionary. `type=str`, `default='./models/dict.pkl'`.
 
+python train.py --cuda --wo_char
+
 ### Evaluation (CLI)
 
 Use `evaluation.py` for the evaluation.
