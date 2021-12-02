@@ -155,7 +155,7 @@ def main():
             return [ Score(lm_score=(ppl)) for ppl in evaluate(opts, corpus, stream, model, criterion, device) ]
         
         logzero.loglevel(10)  # log_level = DEBUG
-        uvicorn.run(app, host=opts.host, port=opts.port, workers=1, logger=logger, debug=True)
+        uvicorn.run(app, host=opts.host, port=opts.port, workers=1, debug=True)
 
     ###############################################################################
     # Calculates perplexities for sentences in the input file
