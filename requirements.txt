@@ -6,7 +6,5 @@ uvicorn
 fastapi
 argparse
 requests
-urllib
-json
 pydantic
 email-validator

@@ -1,3 +1,5 @@
+
+
 # RNN-based language models in pytorch
 
 This is an implementation of bidirectional language models[[1]](#cite1) based on multi-layer RNN (Elman[[2]](#cite2), GRU[[3]](#cite3), or LSTM[[4]](#cite4)) with residual connections[[5]](#cite5) and character embeddings[[6]](#cite6).
@@ -12,6 +14,15 @@ Run `pip install -r requirements.txt`
 
 ## Usage
 ### Training
+
+```
+conda create --name rnnlm python=3.6
+conda activate rnnlm
+pip install -r requirements.txt
+
+python train.py --wo_char --tok_emb 512 --tok_hid 512
+
+```
 
 Use `train.py` for training.
 The `train.py` script accepts the following arguments:
